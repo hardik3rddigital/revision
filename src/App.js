@@ -1,6 +1,7 @@
 import React from "react";
 import Props from "./Components/Props";
 import EventHandle from "./Components/EventHandle";
+import ParentComponets from "./Components/ParentComponets";
 
 function App() {
   return (
@@ -11,6 +12,10 @@ function App() {
 
       <div className="container mt-5 shadow p-3 border">
         <EventHandle />
+      </div>
+
+      <div className="container mt-5 shadow p-3 border">
+        <ParentComponets />
       </div>
     </div>
   );
