@@ -13,7 +13,7 @@ const FormControl = () => {
     const getnamevalue = event.target.value;
 
     setfullname((prefullname) => {
-      console.log(prefullname);
+      //console.log(prefullname);
       return {
         ...prefullname,
         [getnameattr]: getnamevalue,

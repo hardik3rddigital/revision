@@ -7,7 +7,7 @@ const List = () => {
   const FetchList = async () => {
     const response = await fetch("https://jsonplaceholder.typicode.com/comments?postId=1");
     const actualdata = await response.json();
-    console.log(actualdata);
+    //console.log(actualdata);
     NewList(actualdata);
   };
 

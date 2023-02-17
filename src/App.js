@@ -7,6 +7,8 @@ import List from './Components/List';
 import Styling from "./Components/Styling";
 import FormControl from "./Components/FormControl";
 import ReactFragement from "./Components/ReactFragement";
+import MemoComponent from "./Components/MemoComponent";
+import { Ref } from "./Components/Ref";
 
 function App() {
   return (
@@ -41,6 +43,14 @@ function App() {
 
       <div className="container mt-5 shadow p-3 border">
         <ReactFragement />
+      </div>
+
+      <div className="container mt-5 shadow p-3 border">
+        <MemoComponent  ParameterName="Memo Components" />
+      </div>
+
+      <div className="container mt-5 shadow p-3 border">
+        <Ref />
       </div>  
 
 
