@@ -11,6 +11,7 @@ import MemoComponent from "./Components/MemoComponent";
 import { Ref } from "./Components/Ref";
 import PortalElement from "./Components/PortalElement";
 import ErrorBoundary from "./Components/ErrorBoundaryUser";
+import HigherOrderComponent from "./Components/HigherOrderComponent";
 
 function App() {
   return (
@@ -61,6 +62,10 @@ function App() {
 
       <div className="container mt-5 shadow p-3 border">
         <ErrorBoundary />
+      </div>
+
+      <div className="container mt-5 shadow p-3 border">
+        <HigherOrderComponent />
       </div>  
 
 
