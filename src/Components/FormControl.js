@@ -13,33 +13,18 @@ const FormControl = () => {
     const getnamevalue = event.target.value;
 
     setfullname((prefullname) => {
-      if (getnameattr === "fName") {
-        return {
-          ...prefullname,
-          fname: getnamevalue,
-        };
-      } else if (getnameattr === "lName") {
-        return {
-          ...prefullname,
-          lname: getnamevalue,
-        };
-      } else if (getnameattr === "email") {
-        return {
-          ...prefullname,
-          email: getnamevalue,
-        };
-      } else if (getnameattr === "phone") {
-        return {
-          ...prefullname,
-          phone: getnamevalue,
-        };
-      }
+      console.log(prefullname);
+      return {
+        ...prefullname,
+        [getnameattr]: getnamevalue,
+      };
     });
   };
 
   return (
     <>
       <form className="">
+        <h5>Form Control</h5>
         <div className="mb-3">
           <label className="form-label">First Name</label>
           <input
@@ -47,7 +32,7 @@ const FormControl = () => {
             className="form-control"
             value={fullname.fname}
             defaultValue=""
-            name="fName"
+            name="fname"
             onChange={keyupevent}
           />
         </div>
@@ -59,7 +44,7 @@ const FormControl = () => {
             className="form-control"
             value={fullname.lname}
             defaultValue=""
-            name="lName"
+            name="lname"
             onChange={keyupevent}
           />
         </div>

@@ -6,6 +6,7 @@ import ConditionalRendering from "./Components/ConditionalRendering";
 import List from './Components/List';
 import Styling from "./Components/Styling";
 import FormControl from "./Components/FormControl";
+import ReactFragement from "./Components/ReactFragement";
 
 function App() {
   return (
@@ -37,6 +38,10 @@ function App() {
       <div className="container mt-5 shadow p-3 border">
         <FormControl />
       </div>
+
+      <div className="container mt-5 shadow p-3 border">
+        <ReactFragement />
+      </div>  
 
 
     </div>
