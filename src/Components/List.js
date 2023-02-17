@@ -20,7 +20,7 @@ const List = () => {
       <h5>Hello I am List Components</h5>  
       <div className="d-grid m-0 gap-3 d-flex flex-wrap">
         {OldList.map((listvalue,listindex) => {
-          return <div className="col-3 shadow-sm border p-2">
+          return <div className="col-3 shadow-sm border p-2" key={listindex}>
             <h5>{listvalue.id}</h5>
             <p>{listvalue.body}</p>
           </div>;
