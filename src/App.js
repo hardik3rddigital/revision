@@ -4,6 +4,7 @@ import EventHandle from "./Components/EventHandle";
 import ParentComponets from "./Components/ParentComponets";
 import ConditionalRendering from "./Components/ConditionalRendering";
 import List from './Components/List';
+import Styling from "./Components/Styling";
 
 function App() {
   return (
@@ -26,6 +27,10 @@ function App() {
 
       <div className="container mt-5 shadow p-3 border">
         <List />
+      </div>
+
+      <div className="container mt-5 shadow p-3 border">
+        <Styling primary={true} />
       </div>
     </div>
   );
