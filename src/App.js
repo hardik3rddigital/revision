@@ -2,6 +2,7 @@ import React from "react";
 import Props from "./Components/Props";
 import EventHandle from "./Components/EventHandle";
 import ParentComponets from "./Components/ParentComponets";
+import ConditionalRendering from "./Components/ConditionalRendering";
 
 function App() {
   return (
@@ -16,6 +17,10 @@ function App() {
 
       <div className="container mt-5 shadow p-3 border">
         <ParentComponets />
+      </div>
+
+      <div className="container mt-5 shadow p-3 border">
+        <ConditionalRendering />
       </div>
     </div>
   );
