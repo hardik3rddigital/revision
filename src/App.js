@@ -9,6 +9,8 @@ import FormControl from "./Components/FormControl";
 import ReactFragement from "./Components/ReactFragement";
 import MemoComponent from "./Components/MemoComponent";
 import { Ref } from "./Components/Ref";
+import PortalElement from "./Components/PortalElement";
+import ErrorBoundary from "./Components/ErrorBoundaryUser";
 
 function App() {
   return (
@@ -51,6 +53,14 @@ function App() {
 
       <div className="container mt-5 shadow p-3 border">
         <Ref />
+      </div>
+
+      <div className="container mt-5 shadow p-3 border">
+        <PortalElement />
+      </div>  
+
+      <div className="container mt-5 shadow p-3 border">
+        <ErrorBoundary />
       </div>  
 
 
