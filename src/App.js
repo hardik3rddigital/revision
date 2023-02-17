@@ -3,6 +3,7 @@ import Props from "./Components/Props";
 import EventHandle from "./Components/EventHandle";
 import ParentComponets from "./Components/ParentComponets";
 import ConditionalRendering from "./Components/ConditionalRendering";
+import List from './Components/List';
 
 function App() {
   return (
@@ -21,6 +22,10 @@ function App() {
 
       <div className="container mt-5 shadow p-3 border">
         <ConditionalRendering />
+      </div>
+
+      <div className="container mt-5 shadow p-3 border">
+        <List />
       </div>
     </div>
   );
