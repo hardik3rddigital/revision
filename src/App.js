@@ -18,6 +18,7 @@ import Http from "./Components/Http";
 import HttpForms from "./Components/HttpForms";
 import UseStateHook from "./Components/Hooks/UseStateHook";
 import UseStatePreviousData from "./Components/Hooks/UseStatePreviousData";
+import UseStateWithObjectHook from "./Components/Hooks/UseStateWithObjectHook";
 
 
 function App() {
@@ -102,6 +103,10 @@ function App() {
 
       <div className="container mt-5 shadow p-3 border">
         <UseStatePreviousData />
+      </div>
+
+      <div className="container mt-5 shadow p-3 border">
+        <UseStateWithObjectHook />
       </div>
 
     </div>
