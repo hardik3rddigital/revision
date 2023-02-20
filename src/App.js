@@ -12,6 +12,7 @@ import { Ref } from "./Components/Ref";
 import PortalElement from "./Components/PortalElement";
 import ErrorBoundary from "./Components/ErrorBoundaryUser";
 import HigherOrderComponent from "./Components/HigherOrderComponent";
+import CounterRenderProps from "./Components/RenderProps";
 
 function App() {
   return (
@@ -67,6 +68,10 @@ function App() {
       <div className="container mt-5 shadow p-3 border">
         <HigherOrderComponent />
       </div>  
+
+      <div className="container mt-5 shadow p-3 border">
+        <CounterRenderProps render={(param,count)=>param+count} />
+      </div>
 
 
     </div>
