@@ -14,6 +14,9 @@ import ErrorBoundary from "./Components/ErrorBoundaryUser";
 import HigherOrderComponent from "./Components/HigherOrderComponent";
 import CounterRenderProps from "./Components/RenderingProps/RenderProps";
 import ConText from "./Components/Context/ConText";
+import Http from "./Components/Http";
+
+
 
 function App() {
   return (
@@ -76,6 +79,11 @@ function App() {
 
       <div className="container mt-5 shadow p-3 border">
         <ConText />
+      </div>
+
+
+      <div className="container mt-5 shadow p-3 border">
+        <Http />
       </div>
 
 
