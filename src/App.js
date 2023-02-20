@@ -17,6 +17,7 @@ import ConText from "./Components/Context/ConText";
 import Http from "./Components/Http";
 import HttpForms from "./Components/HttpForms";
 import UseStateHook from "./Components/Hooks/UseStateHook";
+import UseStatePreviousData from "./Components/Hooks/UseStatePreviousData";
 
 
 function App() {
@@ -93,6 +94,14 @@ function App() {
 
       <div className="container mt-5 shadow p-3 border">
         <UseStateHook />
+      </div>
+
+      <div className="container mt-5 shadow p-3 border">
+        <UseStateHook />
+      </div>
+
+      <div className="container mt-5 shadow p-3 border">
+        <UseStatePreviousData />
       </div>
 
     </div>
