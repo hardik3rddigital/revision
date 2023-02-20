@@ -7,7 +7,7 @@ function UseEffectHook() {
   useEffect(()=>{
     document.title = `You Clicked ${count} times`;
     console.log(`You Clicked ${count} times`)
-  })
+  }, [count])
     
   return (
     <>

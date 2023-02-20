@@ -21,6 +21,7 @@ import UseStatePreviousData from './Components/Hooks/useState/UseStatePreviousDa
 import UseStateWithObjectHook from "./Components/Hooks/useState/UseStateWithObjectHook";
 import UseStateWithArray from "./Components/Hooks/useState/UseStateWithArray";
 import UseEffectHook from "./Components/Hooks/useEffect/useEffectHook";
+import UseEffectOnceHook from "./Components/Hooks/useEffect/UseEffectOnceHook";
 
 function App() {
   return (
@@ -116,6 +117,10 @@ function App() {
 
       <div className="container mt-5 shadow p-3 border">
         <UseEffectHook />
+      </div>
+
+      <div className="container mt-5 shadow p-3 border">
+        <UseEffectOnceHook />
       </div>
 
 
