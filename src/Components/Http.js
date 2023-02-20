@@ -16,7 +16,7 @@ export class Http extends Component {
       .get("https://jsonplaceholder.typicode.com/posts")
       .then((Response) => {
         this.setState({ posts: Response.data });
-      })
+      })    
       .catch((Error) => {
         console.log(Error);
         this.setState({errorMSG : 'Error Retreving Data'})

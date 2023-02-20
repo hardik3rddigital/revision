@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import axios from "axios";
 
 export class HttpForms extends Component {
   constructor(props) {
@@ -18,6 +19,14 @@ export class HttpForms extends Component {
   submitHandler = (e) => {
     e.preventDefault();
     console.log(this.state);
+
+    axios.post('https://jsonplaceholder.typicode.com/posts',this.state)
+    .then(Response => {
+        console.log(Response);
+    })
+    .catch(Error => {
+        console.log(Error);
+    })
   };
 
   render() {
