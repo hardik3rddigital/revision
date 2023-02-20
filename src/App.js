@@ -22,6 +22,7 @@ import UseStateWithObjectHook from "./Components/Hooks/useState/UseStateWithObje
 import UseStateWithArray from "./Components/Hooks/useState/UseStateWithArray";
 import UseEffectHook from "./Components/Hooks/useEffect/useEffectHook";
 import UseEffectOnceHook from "./Components/Hooks/useEffect/UseEffectOnceHook";
+import UseEffectMouseContainer from "./Components/Hooks/useEffect/UseEffectMouseContainer";
 
 function App() {
   return (
@@ -121,6 +122,10 @@ function App() {
 
       <div className="container mt-5 shadow p-3 border">
         <UseEffectOnceHook />
+      </div>
+
+      <div className="container mt-5 shadow p-3 border">
+        <UseEffectMouseContainer />
       </div>
 
 
