@@ -16,14 +16,11 @@ import CounterRenderProps from "./Components/RenderingProps/RenderProps";
 import ConText from "./Components/Context/ConText";
 import Http from "./Components/Http";
 import HttpForms from "./Components/HttpForms";
-// import UseStateHook from "./Components/Hooks/useState/UseStateHook";
-// import UseStatePreviousData from "./Components/Hooks/UseStatePreviousData";
-// import UseStateWithObjectHook from "./Components/Hooks/UseStateWithObjectHook";
-// import UseStateWithArray from "./Components/Hooks/UseStateWithArray";
 import UseStateHook from "./Components/Hooks/useState/UseStateHook";
 import UseStatePreviousData from './Components/Hooks/useState/UseStatePreviousData';
 import UseStateWithObjectHook from "./Components/Hooks/useState/UseStateWithObjectHook";
 import UseStateWithArray from "./Components/Hooks/useState/UseStateWithArray";
+import UseEffectHook from "./Components/Hooks/useEffect/useEffectHook";
 
 function App() {
   return (
@@ -116,6 +113,11 @@ function App() {
       <div className="container mt-5 shadow p-3 border">
         <UseStateWithArray />
       </div>
+
+      <div className="container mt-5 shadow p-3 border">
+        <UseEffectHook />
+      </div>
+
 
     </div>
   );
