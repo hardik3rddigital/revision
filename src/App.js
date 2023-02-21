@@ -32,6 +32,7 @@ import UseReducerCounter from "./Components/Hooks/useReducer/UseReducerCounter";
 import UseReducerCounterType from "./Components/Hooks/useReducer/UseReducerCounterType";
 import UseReducerUseContext from "./Components/Hooks/useReducer/UseReducerUseContext";
 import FetchingData from "./Components/Hooks/useReducer/useReducerAndUseContext/FetchingData";
+import FetchingData2 from "./Components/Hooks/useReducer/useReducerAndUseContext/FetchingData2";
 
 
 function App() {
@@ -172,6 +173,10 @@ function App() {
 
       <div className="container mt-5 shadow p-3 border">
         <FetchingData />
+      </div>
+
+      <div className="container mt-5 shadow p-3 border">
+        <FetchingData2 />
       </div>
 
       
