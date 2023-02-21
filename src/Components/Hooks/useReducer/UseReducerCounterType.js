@@ -5,9 +5,9 @@ const intialState = {
 const funcationname = (state, action) => {
   switch (action.type) {
     case "Increment":
-      return {firstCounter : state.firstCounter + 1};
+      return {firstCounter : state.firstCounter + action.value};
     case "Decrement":
-        return {firstCounter : state.firstCounter - 1 };
+        return {firstCounter : state.firstCounter - action.value};
     case "Reset":
       return intialState;
     default:
@@ -24,15 +24,15 @@ function UseReducerCounterType() {
       <h5>Counter : {count.firstCounter }</h5>
       <button
         className="btn btn-primary mx-2 ms-0"
-        onClick={() => dispatch({ type: "Increment" })}
+        onClick={() => dispatch({ type: "Increment", value : 12 })}
       >
-        Increment
+        Increment : 12
       </button>
       <button
         className="btn btn-primary mx-2 ms-0"
-        onClick={() => dispatch({ type: "Decrement" })}
+        onClick={() => dispatch({ type: "Decrement", value : 2 })}
       >
-        Decrement
+        Decrement : 2
       </button>
       <button
         className="btn btn-primary mx-2 ms-0"
