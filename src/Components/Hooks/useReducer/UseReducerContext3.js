@@ -8,7 +8,7 @@ function UseReducerContext3() {
 
   return (
     <>
-      <h5 className="mt-3">UseReducerContext3</h5>
+      <h5 className="mt-3">UseReducerContext3 (Counter : {countContext.countState})</h5>
       <button
         className="btn btn-primary mx-2 ms-0"
         onClick={() => countContext.countDispatch("Increment")}
