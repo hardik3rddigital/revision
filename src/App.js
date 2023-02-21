@@ -27,7 +27,7 @@ import UseEffectIntervalHook from "./Components/Hooks/useEffect/UseEffectInterva
 import UseEffectFuncationIntervalHook from "./Components/Hooks/useEffect/UseEffectFuncationIntervalHook";
 import FetchData from "./Components/Hooks/useEffect/FetchData";
 import FetchDataUserID from "./Components/Hooks/useEffect/FetchDataUserID";
-
+import UseContext from "./Components/Hooks/useContext/UseContext";
 
 
 function App() {
@@ -150,7 +150,9 @@ function App() {
         <FetchDataUserID />
       </div>
 
-
+      <div className="container mt-5 shadow p-3 border">
+        <UseContext />
+      </div>
     </div>
   );
 }

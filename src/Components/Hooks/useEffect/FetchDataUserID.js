@@ -20,7 +20,7 @@ function FetchDataUserID() {
     <>
       <h5>
         Hello I am FetchData Components{" "}
-        <span className="text-dark">(Using Axios)</span>
+        <span className="text-dark">(Using Axios and pass id)</span>
       </h5>
       <input
         type="text"
