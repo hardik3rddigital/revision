@@ -5,7 +5,7 @@ function UseEffectOnceHook() {
   const [y,setY] = useState(0);
 
   const logMousePosition = (e) => {
-    console.log('Mouse Event');
+    //console.log('Mouse Event');
     setX(e.clientX)
     setY(e.clientY)
   }
@@ -14,7 +14,7 @@ function UseEffectOnceHook() {
     window.addEventListener('mousemove',logMousePosition)
 
     return () => {
-      console.log('Component unmounting code');
+      //console.log('Component unmounting code');
       window.removeEventListener('mousemove',logMousePosition);
     }
   },[])

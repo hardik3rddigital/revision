@@ -23,6 +23,12 @@ import UseStateWithArray from "./Components/Hooks/useState/UseStateWithArray";
 import UseEffectHook from "./Components/Hooks/useEffect/useEffectHook";
 import UseEffectOnceHook from "./Components/Hooks/useEffect/UseEffectOnceHook";
 import UseEffectMouseContainer from "./Components/Hooks/useEffect/UseEffectMouseContainer";
+import UseEffectIntervalHook from "./Components/Hooks/useEffect/UseEffectIntervalHook";
+import UseEffectFuncationIntervalHook from "./Components/Hooks/useEffect/UseEffectFuncationIntervalHook";
+import FetchData from "./Components/Hooks/useEffect/FetchData";
+import FetchDataUserID from "./Components/Hooks/useEffect/FetchDataUserID";
+
+
 
 function App() {
   return (
@@ -126,6 +132,22 @@ function App() {
 
       <div className="container mt-5 shadow p-3 border">
         <UseEffectMouseContainer />
+      </div>
+
+      <div className="container mt-5 shadow p-3 border">
+        <UseEffectIntervalHook />
+      </div>
+
+      <div className="container mt-5 shadow p-3 border">
+        <UseEffectFuncationIntervalHook />
+      </div>
+
+      <div className="container mt-5 shadow p-3 border">
+        <FetchData />
+      </div>
+
+      <div className="container mt-5 shadow p-3 border">
+        <FetchDataUserID />
       </div>
 
 
