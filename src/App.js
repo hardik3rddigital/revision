@@ -33,7 +33,7 @@ import UseReducerCounterType from "./Components/Hooks/useReducer/UseReducerCount
 import UseReducerUseContext from "./Components/Hooks/useReducer/UseReducerUseContext";
 import FetchingData from "./Components/Hooks/useReducer/useReducerAndUseContext/FetchingData";
 import FetchingData2 from "./Components/Hooks/useReducer/useReducerAndUseContext/FetchingData2";
-
+import ParentComponentCallBack from './Components/Hooks/useCallback/ParentComponentCallBack'
 
 function App() {
   return (
@@ -177,6 +177,10 @@ function App() {
 
       <div className="container mt-5 shadow p-3 border">
         <FetchingData2 />
+      </div>
+
+      <div className="container mt-5 shadow p-3 border">
+        <ParentComponentCallBack />
       </div>
 
       
