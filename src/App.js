@@ -30,6 +30,7 @@ import FetchDataUserID from "./Components/Hooks/useEffect/FetchDataUserID";
 import UseContext from "./Components/Hooks/useContext/UseContext";
 import UseReducerCounter from "./Components/Hooks/useReducer/UseReducerCounter";
 import UseReducerCounterType from "./Components/Hooks/useReducer/UseReducerCounterType";
+import UseReducerUseContext from "./Components/Hooks/useReducer/UseReducerUseContext";
 
 function App() {
   return (
@@ -163,6 +164,13 @@ function App() {
         <UseReducerCounterType />
       </div>
 
+      <div className="container mt-5 shadow p-3 border">
+        <UseReducerUseContext />
+      </div>
+
+
+
+      
     </div>
   );
 }
