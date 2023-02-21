@@ -34,6 +34,7 @@ import UseReducerUseContext from "./Components/Hooks/useReducer/UseReducerUseCon
 import FetchingData from "./Components/Hooks/useReducer/useReducerAndUseContext/FetchingData";
 import FetchingData2 from "./Components/Hooks/useReducer/useReducerAndUseContext/FetchingData2";
 import ParentComponentCallBack from './Components/Hooks/useCallback/ParentComponentCallBack'
+import UseMemoHook from "./Components/Hooks/useMemo/UseMemoHook";
 
 function App() {
   return (
@@ -181,6 +182,10 @@ function App() {
 
       <div className="container mt-5 shadow p-3 border">
         <ParentComponentCallBack />
+      </div>
+
+      <div className="container mt-5 shadow p-3 border">
+        <UseMemoHook />
       </div>
 
       
