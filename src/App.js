@@ -36,6 +36,8 @@ import FetchingData2 from "./Components/Hooks/useReducer/useReducerAndUseContext
 import ParentComponentCallBack from './Components/Hooks/useCallback/ParentComponentCallBack'
 import UseMemoHook from "./Components/Hooks/useMemo/UseMemoHook";
 import UseRefHook from "./Components/Hooks/useRef/UseRefHook";
+import UseRefHookClassTimer from "./Components/Hooks/useRef/UseRefHookClassTimer";
+import UseRefHookFunctionTime from "./Components/Hooks/useRef/UseRefHookFunctionTime";
 
 function App() {
   return (
@@ -193,7 +195,15 @@ function App() {
         <UseRefHook />
       </div>
 
-      
+      <div className="container mt-5 shadow p-3 border">
+        <UseRefHookClassTimer />
+      </div>
+
+      <div className="container mt-5 shadow p-3 border">
+        <UseRefHookFunctionTime />
+      </div>
+
+
     </div>
   );
 }
