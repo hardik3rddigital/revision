@@ -42,6 +42,8 @@ import CustomHook from "./Components/Hooks/CustomHook/CustomHook";
 import CustomHookTwo from "./Components/Hooks/CustomHook/CustomHookTwo";
 import CounterOne from "./Components/Hooks/CustomHook/CounterOne";
 import CounterTwo from "./Components/Hooks/CustomHook/CounterTwo";
+import UseInputCustomHook from './Components/Hooks/CustomHook/UseInputCustomHook';
+
 
 function App() {
   return (
@@ -222,6 +224,12 @@ function App() {
       <div className="container mt-5 shadow p-3 border">
         <CounterTwo />
       </div>
+
+      <div className="container mt-5 shadow p-3 border">
+        <UseInputCustomHook />
+      </div>
+
+      
 
 
     </div>
