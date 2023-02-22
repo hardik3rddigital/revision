@@ -13,7 +13,7 @@ function CustomHookTwo() {
         <span className="text-dark">(Changing Document Time)</span>
       </h5>
       <button className="btn btn-primary" onClick={() => setCount(count + 1)}>
-        Count - {count}
+        Count : {count}
       </button>
     </>
   );
