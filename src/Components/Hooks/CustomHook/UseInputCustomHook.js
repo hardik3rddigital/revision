@@ -1,13 +1,17 @@
-import React, { useState } from "react";
+import React from "react";
+import useInput from "./useInput";
 
 function useInputCustomHook() {
-  const [firstname, setFirstname] = useState("");
-  const [lastname, setLastname] = useState("");
+  const [firstName, bindFirstname, resetFirstName] = useInput("");
+  const [lastName, bindLastname, resetLastName] = useInput("");
 
   const submitform = (e) => {
     e.preventDefault();
-    console.log(`Hello ${firstname} ${lastname}`)
-  }
+    console.log(`Hello ${firstName} ${lastName}`);
+    resetFirstName();
+    resetLastName();
+  };
+
   return (
     <>
       <h5>
@@ -20,8 +24,7 @@ function useInputCustomHook() {
           <input
             className="form-control"
             placeholder="Firstname"
-            onChange={(e) => setFirstname(e.target.value)}
-            value={firstname}
+            {...bindFirstname}
           />
         </div>
 
@@ -29,8 +32,7 @@ function useInputCustomHook() {
           <input
             className="form-control"
             placeholder="Lastname"
-            onChange={(e) => setLastname(e.target.value)}
-            value={lastname}
+            {...bindLastname}
           />
         </div>
 
