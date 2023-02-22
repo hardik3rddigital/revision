@@ -39,6 +39,7 @@ import UseRefHook from "./Components/Hooks/useRef/UseRefHook";
 import UseRefHookClassTimer from "./Components/Hooks/useRef/UseRefHookClassTimer";
 import UseRefHookFunctionTime from "./Components/Hooks/useRef/UseRefHookFunctionTime";
 import CustomHook from "./Components/Hooks/CustomHook/CustomHook";
+import CustomHookTwo from "./Components/Hooks/CustomHook/CustomHookTwo";
 
 function App() {
   return (
@@ -206,6 +207,10 @@ function App() {
 
       <div className="container mt-5 shadow p-3 border">
         <CustomHook />
+      </div>
+
+      <div className="container mt-5 shadow p-3 border">
+        <CustomHookTwo />
       </div>
 
 
